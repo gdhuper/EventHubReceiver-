@@ -8,11 +8,11 @@ namespace EventHubProcessor
     class Program 
     { 
 
-    private const string EventHubConnectionString = "Endpoint=sb://serpent.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=0rpkvrmh62O2ZIwEsfDGr6Bj0ALicE62OxuYoTsYxYw=";
-    private const string EventHubName = "testeventhub";
-    private const string StorageContainerName = "eventhubcontainer";
-    private const string StorageAccountName = "brbblob";
-    private const string StorageAccountKey = "pD0dOC+BHWkYqG9CHX1wVLY3d8sim9IjqUxtwmhjKDFyR1M4BUkj8hRgIm52KJym0iJQJrZqREaDEVC7UheAZw==";
+    private const string EventHubConnectionString = "";
+    private const string EventHubName = "";
+    private const string StorageContainerName = "";
+    private const string StorageAccountName = "";
+    private const string StorageAccountKey = "";
 
     private static readonly string StorageConnectionString = string.Format("DefaultEndpointsProtocol=https;AccountName={0};AccountKey={1}", StorageAccountName, StorageAccountKey);
     
