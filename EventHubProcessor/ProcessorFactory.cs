@@ -6,18 +6,21 @@ using System.Threading.Tasks;
 
 namespace EventHubProcessor
 {
-    public class ProcessorFactory: IEventProcessorFactory
+    public class ProcessorFactory : IEventProcessorFactory
     {
         private string connectionStr;
         private int numCreated = 0;
-        public ProcessorFactory(string connectionStr)   
+
+        public ProcessorFactory(string connectionStr)
         {
             this.connectionStr = connectionStr;
+            
         }
-
         public IEventProcessor CreateEventProcessor(PartitionContext context)
         {
             return new SampleEventProcessor(connectionStr);
         }
+
+
     }
 }
